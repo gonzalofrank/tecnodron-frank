@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="shortcut icon" href="./assets/icons/dronnegro.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoDron | Inicio</title>
+    <!--  si o si el link de bootstrap tiene que estar linkeado antes del archivo css, css abajo de todo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
     <link rel="preload" href="./style/normalize.css" as="style">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="preload" href="./style/style.css" as="style">
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="parallax img-uno" id="m">
-            <div class="centrar-img">
-                <a href="#"><img src="./assets/img/logoblanco1.png" alt="portada" width="600"></a>
-            </div>
-            <div class="texto-interior">
-                <a class="boton" href="./pages/contacto.html">Contactanos</a>
-            </div>
-        </div> <!-- .parallax -->
 
-        <div class="nav-bg">
-            <nav class="navegacion-principal contenedor">
-                <a class="btn-nav-bg" href="#">Inicio</a>
-                <a href="./pages/nosotros.html">Nosotros</a>
-                <a href="./pages/servicios.html">Servicios</a>
-                <a href="./pages/trabajos.html">Trabajos</a>
-                <a href="./pages/contacto.html">Contacto</a>
-            </nav>
+<body>
+    <div class="parallax img-uno" id="m">
+        <div class="centrar-img">
+            <a href="#"><img src="./assets/img/logoblanco1.png" alt="portada" width="600"></a>
         </div>
+        <div class="texto-interior">
+            <a class="boton" href="./pages/contacto.html">Contactanos</a>
+        </div>
+    </div> <!-- .parallax -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/icons/dronblanco.png" alt="logo-nav" width="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    <a class="nav-link" href="./pages/trabajos.html">Trabajos</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div>
@@ -39,21 +51,21 @@
                 <h1><img src="./assets/img/TecnoDronTitulo.png" alt="Titulo" width="300"></h1>
             </article>
             <section class="grid-section text-section">
-                    <article class="a2">
-                        <p>Somos una empresa dedicada al desarrollo de contenidos para empresas, instituciones y diferentes
-                            medios. Trabajamos juntos para aportar valor a tu proyecto, porque somos conscientes de todo el
-                            esfuerzo que hay detrás, y nuestro objetivo es comunicarlo de la mejor manera.</p>
-                        <p>Entendemos que cada proyecto es único, por eso contamos con un completo equipamiento de alta
-                            calidad, que nos permite adaptarnos a todo tipo de trabajos.</p>
-                        <p>En TecnoDron escuchamos tu idea y la materializamos, a través de distintas herramientas
-                            audiovisuales. Realizamos producciones audiovisuales, fotogrametría con drones, recorridos virtuales
-                            en primera persona y mucho más. Nuestra experiencia nos permite decir que nuestros trabajos son
-                            garantía de calidad, compromiso y profesionalismo.</p>
-                    </article>
-                    <article class="a2">
-                        <iframe class="video" src="https://www.youtube.com/embed/fjTxe5meotU"
-                            frameborder="0"></iframe>
-                    </article>
+                <article class="a2">
+                    <p>Somos una empresa dedicada al desarrollo de contenidos para empresas, instituciones y diferentes
+                        medios. Trabajamos juntos para aportar valor a tu proyecto, porque somos conscientes de todo el
+                        esfuerzo que hay detrás, y nuestro objetivo es comunicarlo de la mejor manera.</p>
+                    <p>Entendemos que cada proyecto es único, por eso contamos con un completo equipamiento de alta
+                        calidad, que nos permite adaptarnos a todo tipo de trabajos.</p>
+                    <p>En TecnoDron escuchamos tu idea y la materializamos, a través de distintas herramientas
+                        audiovisuales. Realizamos producciones audiovisuales, fotogrametría con drones, recorridos
+                        virtuales
+                        en primera persona y mucho más. Nuestra experiencia nos permite decir que nuestros trabajos son
+                        garantía de calidad, compromiso y profesionalismo.</p>
+                </article>
+                <article class="a2">
+                    <iframe class="video" src="https://www.youtube.com/embed/fjTxe5meotU" frameborder="0"></iframe>
+                </article>
             </section>
         </div>
     </main>
@@ -64,14 +76,25 @@
         <div class="footer-center centrar">
             <section>
                 <ul>
-                    <li> <a target="_blank" href="https://www.facebook.com/tecnodronar"><img src="./assets/icons/facebook.png" alt="icon_facebook" width="30"></a></li>
-                    <li> <a target="_blank" href="https://www.instagram.com/tecnodronarg/?hl=es-la"><img src="./assets/icons/instagram.png" alt="icon_instagram" width="30"></a></li>
-                    <li> <a target="_blank" href="https://www.linkedin.com/company/tecnodron/"><img src="./assets/icons/linkedin.png" alt="icon_linkedin" width="30"></a></li>
-                    <li> <a target="_blank" href="https://api.whatsapp.com/send/?phone=543764511785&text&type=phone_number&app_absent=0"><img src="./assets/icons/whatsapp.png" alt="icon_whatsaspp" width="30"></a></li>
-                    <li> <a target="_blank" href="https://www.youtube.com/channel/UCLR3sV_lIw2hnyusvgw-E6g/featured"> <img src="./assets/icons/youtube.png" alt="icon_youtube" width="30"></a></li>
+                    <li> <a target="_blank" href="https://www.facebook.com/tecnodronar"><img
+                                src="./assets/icons/facebook.png" alt="icon_facebook" width="30"></a></li>
+                    <li> <a target="_blank" href="https://www.instagram.com/tecnodronarg/?hl=es-la"><img
+                                src="./assets/icons/instagram.png" alt="icon_instagram" width="30"></a></li>
+                    <li> <a target="_blank" href="https://www.linkedin.com/company/tecnodron/"><img
+                                src="./assets/icons/linkedin.png" alt="icon_linkedin" width="30"></a></li>
+                    <li> <a target="_blank"
+                            href="https://api.whatsapp.com/send/?phone=543764511785&text&type=phone_number&app_absent=0"><img
+                                src="./assets/icons/whatsapp.png" alt="icon_whatsaspp" width="30"></a></li>
+                    <li> <a target="_blank" href="https://www.youtube.com/channel/UCLR3sV_lIw2hnyusvgw-E6g/featured">
+                            <img src="./assets/icons/youtube.png" alt="icon_youtube" width="30"></a></li>
                 </ul>
             </section>
         </div>
     </footer>
+
+    <!-- scripts siempre abajo de todo antes de cerrar el body -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
+
 </html>
