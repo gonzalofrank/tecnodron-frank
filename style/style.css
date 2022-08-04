@@ -81,11 +81,6 @@ body{
     border-width: 0.5rem;
 }
 
-header{
-    position: sticky;
-    top: 0%;
-}
-
 /*Bootstrap*/
 
 .navbar-collapse{
