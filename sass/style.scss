@@ -1,3 +1,7 @@
+/*variables sass*/
+
+$color-resaltar: #fdfd96;
+
 *{
 	margin:0;
 	padding: 0;
@@ -48,7 +52,6 @@ body{
 }
 
 .texto-interior div{
-    padding-top: 0rem;
     font-size: 8rem;
 }
 
@@ -108,12 +111,13 @@ body{
 
     text-align: center;
     border: none;
-}
 
-.boton:hover{
-    cursor: pointer;
-    background-color: var(--resaltar);
-    color: var(--osucro);
+    &:hover{
+        cursor: pointer;
+        background-color: $color-resaltar;
+        color: var(--osucro);
+    }
+
 }
 
 .grid-section{
@@ -247,7 +251,6 @@ body{
     align-items: center;
 }
 
-
 .container{
     display: flex;
     flex-wrap: row wrap;
@@ -266,13 +269,14 @@ body{
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-}
-.container-job section{
-    padding: 1rem;
-}
 
-.container-job img{
-    border: 1pt solid;
+    section{
+        padding: 1rem;
+    }
+
+    img{
+        border: 1pt solid;
+    }
 }
 
 /*footer*/

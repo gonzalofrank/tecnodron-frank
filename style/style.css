@@ -1,3 +1,4 @@
+/*variables sass*/
 * {
   margin: 0;
   padding: 0; }
@@ -40,7 +41,6 @@ body {
   padding-top: 3rem; }
 
 .texto-interior div {
-  padding-top: 0rem;
   font-size: 8rem; }
 
 /*Imagenes*/
@@ -98,11 +98,10 @@ body {
   border-radius: .5rem;
   text-align: center;
   border: none; }
-
-.boton:hover {
-  cursor: pointer;
-  background-color: var(--resaltar);
-  color: var(--osucro); }
+  .boton:hover {
+    cursor: pointer;
+    background-color: #fdfd96;
+    color: var(--osucro); }
 
 .grid-section {
   display: grid;
@@ -229,12 +228,10 @@ body {
   margin: 1rem;
   display: flex;
   flex-wrap: wrap; }
-
-.container-job section {
-  padding: 1rem; }
-
-.container-job img {
-  border: 1pt solid; }
+  .container-job section {
+    padding: 1rem; }
+  .container-job img {
+    border: 1pt solid; }
 
 /*footer*/
 .footer-bg {
