@@ -1,6 +1,15 @@
-/*variables sass*/
+/*map sass*/
 
-$color-resaltar: #fdfd96;
+$colores:(
+    color-resaltar: #fdfd96,
+);
+
+/*Mixins*/
+
+@mixin sizes($height, $width) {
+    height: $height;
+    width: $width;
+}
 
 *{
 	margin:0;
@@ -113,10 +122,9 @@ body{
 
     &:hover{
         cursor: pointer;
-        background-color: $color-resaltar;
+        background-color: map-get($map: $colores, $key: color-resaltar);
         color: var(--osucro);
     }
-
 }
 
 .grid-section{
@@ -134,13 +142,12 @@ body{
 }
 
 .a2{
+    @extend .a1;
     justify-self: center;
-    align-self: center;
 }
 
 .video{
-    width: 500px;
-    height: 300px;
+    @include sizes(300px, 500px);
 }
 
 .center-section h1{
