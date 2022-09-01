@@ -233,6 +233,15 @@ body {
   .container-job img {
     border: 1pt solid; }
 
+.img-size img{
+  width: 600px;
+}
+
+.img-size iframe{
+  width: 600px;
+  height: 338px;
+}
+
 /*footer*/
 .footer-bg {
   font-size: 0.6rem; }
@@ -260,12 +269,18 @@ body {
   .centrar-img img {
     width: 100%; }
   .footer-bg {
-    font-size: 0.4rem; }
+    font-size: 0.4rem; 
+    text-align: center; }
   .footer-center ul li {
-    padding: 0.5rem; }
+    padding: 0.5rem;}
   .video {
     width: 350px;
-    height: 250px; } }
+    height: 250px; } 
+  .img-size img{
+    width: 330px;}
+  .img-size iframe{
+      width: 330px;
+      height: 186.5px;} }
 
 @media (min-width: 576px) {
   .contenedor-campos {
