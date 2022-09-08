@@ -90,6 +90,10 @@ body {
 .nav-link {
   text-align: center; }
 
+.logo-size{
+  width: 50px;
+}
+
 /*Boton*/
 .boton {
   background-color: var(--primario);
